@@ -1,0 +1,12 @@
+<h1>Bustler Magazine</h1>
+<div class="col-md-6">
+  {{outlet}}
+</div>
+
+<h3> The Headlines! </h3>
+
+<ul>
+  {{#each}}
+    <li>{{#link-to 'post' this.id}}{{title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
